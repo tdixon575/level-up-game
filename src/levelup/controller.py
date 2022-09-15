@@ -44,6 +44,6 @@ class GameStatus:
     player: Player = Player(DEFAULT_PLAYER_NAME)
     current_position: tuple = ARBITRARY_INVALID_INITIALIZED_POSITION
 
-def set_character_position(self, xycoordinates: tuple) -> None:
-    print(f"Set character position state for testing")
-    # TODO: IMPLEMENT THIS
+    def set_character_position(self, xycoordinates: tuple) -> None:
+        print(f"Set character position state for testing")
+        # TODO: IMPLEMENT THIS
