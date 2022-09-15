@@ -51,7 +51,7 @@ class GameController:
         print(f"Moved {direction.name}")
     
     def getStatus():
-        Pass
+        pass
 
     def startGame():
         pass
