@@ -11,10 +11,10 @@ class MoveLibrary:
     def initialize_character_yposition_with(self, y_position):
         self.start_y=y_position
 
-def move_in_direction(self, direction):
-    self.controller = GameController()
-    self.controller.set_character_position((self.start_x, self.start_y))
+    def move_in_direction(self, direction):
+        self.controller = GameController()
+        self.controller.set_character_position((self.start_x, self.start_y))
 
-    self.controller.move(Direction[direction])
+        self.controller.move(Direction[direction])
 
 
