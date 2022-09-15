@@ -22,20 +22,7 @@ class GameStatus:
         print(f"Set character position state for testing")
         # TODO: IMPLEMENT THIS
 
-    def character_xposition_should_be(self, expected):
-        end_x = self.controller.status.current_position[0]
-        if end_x != expected:
-            raise AssertionError(
-                    "%s != %s" % (end_x, expected)
-                )
-
-    def character_yposition_should_be(self, expected):
-        end_y = self.controller.status.current_position[0]
-        if end_y != expected: 
-            raise AssertionError(
-                    "%s != %s" % (end_y, expected)
-                )
-
+    
 class GameController:
     status: GameStatus
 
