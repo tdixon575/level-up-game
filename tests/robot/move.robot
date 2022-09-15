@@ -4,14 +4,14 @@ Test Template: Move Character
 Library: MoveLibrary.py
 
 ***Test Cases***                 StartingX  StartingY  Direction  EndingX  EndingY
-Move in middle of board         5          5          N          5        6
-Move in middle of board         9          6          E          10       6
-Move in middle of board         6          5          S          6        4
-Move in middle of board         3          2          W          2        2
-Move on edge of the board       8          10         N          8        10
-Move on edge of the board       1          7          W          1        7
-Move on edge of the board       10         8          E          10       8
-Move on edge of the board       6          1          S          6        1      
+Move in middle of board          5          5          n          5        6
+Move in middle of board          9          6          e          10       6
+Move in middle of board          6          5          s          6        4
+Move in middle of board          3          2          w          2        2
+Move on edge of the board        8          10         n          8        10
+Move on edge of the board        1          7          w          1        7
+Move on edge of the board        10         8          e          10       8
+Move on edge of the board        6          1          s          6        1      
 
 ***Keywords***
 Move character
