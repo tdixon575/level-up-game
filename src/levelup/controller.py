@@ -17,6 +17,9 @@ class GameStatus:
     running: bool = False
     character: Character = Character(DEFAULT_CHARACTER_NAME)
 
+    def set_character_position(self, xycoordinates: tuple) -> None:
+        print(f"Set character position state for testing")
+        # TODO: IMPLEMENT THIS
 
 class GameController:
     status: GameStatus
@@ -37,16 +40,3 @@ class GameController:
 
     def startGame():
         pass
-
-@dataclass
-class GameStatus:
-    running: bool = False
-    player: Player = Player(DEFAULT_PLAYER_NAME)
-    current_position: tuple = ARBITRARY_INVALID_INITIALIZED_POSITION
-
-    def set_character_position(self, xycoordinates: tuple) -> None:
-        print(f"Set character position state for testing")
-        # TODO: IMPLEMENT THIS
-
-class Player:
-    name: str = "sreedhar"
