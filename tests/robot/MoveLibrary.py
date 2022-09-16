@@ -1,16 +1,15 @@
-from levelup.controller import GameController
+from levelup.controller import GameController, GameStatus
 from levelup.controller import Direction
 
 start_x: int
 start_y: int
 
 class MoveLibrary:
-    #def initialize_character_xposition_with(self, x_position):
-    def initialize_character_xposition_with(self, startingX):
-        self.start_x=x_position
 
-    def initialize_character_yposition_with(self, y_position):
-        self.start_y=y_position
+    #def initialize_character_xposition_with(self, x_position):
+    def initialize_character_position_with(self, startingX, startingY):
+        xy_coord = (startingX, startingY)
+        self.controller.status.set_character_position = xy_coord
 
     def move_in_direction(self, direction):
         self.controller = GameController()
