@@ -16,7 +16,6 @@ Move on edge of the board        6          1          s          6        1
 ***Keywords***
 Move character
     [Arguments]      ${startingX}   ${startingY}  ${direction}   ${endingX}   ${endingY}
-    Initialize character position with  ${startingX},${startingY}
+    Initialize character position with  ${startingX}    ${startingY}
     Move in direction                   ${direction}
-    Character xposition should be       ${endingX}
-    Character yposition should be       ${endingY}
+    Character position should be       ${endingX}   ${endingY}

@@ -21,8 +21,8 @@ class Map:
             return False
 
     def calculatePosition(self, current_position: tuple, direction: str) -> tuple:
-        x_coord = current_position[0]
-        y_coord = current_position[1]
+        x_coord = int(current_position[0])
+        y_coord = int(current_position[1])
 
         if direction.lower() in ('north','n'):
             if y_coord < self.max_y:
