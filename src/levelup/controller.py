@@ -23,6 +23,9 @@ class GameStatus:
         print(f"Set character position state for testing")
         self.current_position = xycoordinates
 
+    def getPosition(self):
+        return self.current_position
+
     
 class GameController:
     status: GameStatus
