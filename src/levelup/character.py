@@ -4,5 +4,7 @@ from dataclasses import dataclass
 class Character:
     name: str
 
-    # def getPosition(self, gc_obj: GameController):
-    #     return gc_obj.status.current_position
+    def move(self, direction) -> None:
+        print(f"Moving {direction}")
+        
+        self.status.character.move(direction)

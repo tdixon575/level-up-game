@@ -1,4 +1,3 @@
-from levelup.controller import Direction
 # map class
 
 class Map:
