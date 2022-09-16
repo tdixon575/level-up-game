@@ -5,7 +5,8 @@ start_x: int
 start_y: int
 
 class MoveLibrary:
-    def initialize_character_xposition_with(self, x_position):
+    #def initialize_character_xposition_with(self, x_position):
+    def initialize_character_xposition_with(self, startingX):
         self.start_x=x_position
 
     def initialize_character_yposition_with(self, y_position):
