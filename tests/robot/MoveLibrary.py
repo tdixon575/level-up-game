@@ -16,19 +16,15 @@ class MoveLibrary:
         #self.controller.set_character_position((self.start_x, self.start_y))
         self.controller.move(direction)
 
-    def character_position_should_be(self, expected):
-        end_x = self.controller.status.current_position[0]
-        if end_x != expected:
+    def character_position_should_be(self, expected_x, expected_y):
+
+        expected_xy = (int(expected_x), int(expected_y))
+        end_x = self.controller.status.getPosition()
+        if end_x != expected_xy:
             raise AssertionError(
-                    "%s != %s" % (end_x, expected)
+                    "%s != %s" % (end_x, expected_xy)
                 )
 
-    def character_yposition_should_be(self, expected):
-        end_y = self.controller.status.current_position[1]
-        if end_y != expected: 
-            raise AssertionError(
-                    "%s != %s" % (end_y, expected)
-                )
 
 
 
