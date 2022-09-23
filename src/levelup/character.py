@@ -13,6 +13,7 @@ class Character:
     persona: str
     total_health: int = 5
     attack_power: int = 2
+    speed: int = 1
     alive: bool = True
 
 

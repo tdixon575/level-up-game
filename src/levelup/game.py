@@ -28,6 +28,7 @@ class GameUI:
         ''
 
     def start(self):
+        self.game.create_personas()
         character = self.prompt("Enter your name", lambda x: len(x) > 0)
         welcome = f'Welcome to the game of Eternal Glory, {character}!\n'
         self.slow_type(welcome)
@@ -43,14 +44,17 @@ class GameUI:
         map_size = int(self.prompt("Choose the size of your world (5-50 km):", lambda x: 4 < int(x) < 51))
 
         self.game.total_num_monsters = map_size // 2
-        self.slow_type(f'Generating map\n')
-        self.slow_type('. . . . . . . . . .\n', 10)
+        print(f'Generating map')
+        self.slow_type('. . . . . . . . . . ', 20)
+        print('Done!')
         self.game.map: Map = Map(map_size)
-        self.slow_type(f'Creating monsters\n')
-        self.slow_type('. . . . . . . . . .\n', 10)
+        print(f'Creating monsters')
+        self.slow_type('. . . . . . . . . . ', 20)
+        print('Done!')
         self.game.create_monsters(map_size)
-        self.slow_type(f'Generating your character\n')
-        self.slow_type('. . . . . . . . . .\n', 10)
+        print(f'Generating your character')
+        self.slow_type('. . . . . . . . . . ', 20)
+        print('Done!')
         self.game.create_character(character, Persona(persona_choice))
         self.game.status.set_character_position(self.game.gen_random_location(map_size))
 
